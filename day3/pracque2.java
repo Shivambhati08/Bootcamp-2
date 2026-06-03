@@ -1,7 +1,7 @@
+// Find First Non Repeating Character
 
 import java.util.Scanner;
-
-public class findfirstnonrepeatingchar {
+public class pracque2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();

@@ -1,6 +1,8 @@
+//Count Consonants in a string
+
 import java.util.Scanner;
 
-public class consonantcount{
+public class pracque1{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
@@ -15,5 +17,6 @@ public class consonantcount{
             }
         }
         System.out.println("Consonants: "+count);
+        sc.close();
     }
 }

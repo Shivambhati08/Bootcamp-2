@@ -1,7 +1,7 @@
+//Diagonal Difference in Matrix
 
 import java.util.Scanner;
-
-public class dignonaldifference {
+public class pracque6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -11,13 +11,14 @@ public class dignonaldifference {
                 arr[i][j] = sc.nextInt();
             }
         }
-        int maindiagonalsum = 0;
-        int antidiagonalsum = 0;
+        int primarydiagonalsum = 0;
+        int secondarydiagonalsum = 0;
          for (int i = 0; i < n; i++) {
-                maindiagonalsum += arr[i][i];
-                antidiagonalsum += arr[i][n-i-1];
+                primarydiagonalsum += arr[i][i];
+                secondarydiagonalsum += arr[i][n-i-1];
             }
-        int difference = Math.abs(maindiagonalsum - antidiagonalsum);
+        int difference = Math.abs(primarydiagonalsum - secondarydiagonalsum);
         System.out.println("Difference of diagonal: "+difference);
+        sc.close();
     }
 }

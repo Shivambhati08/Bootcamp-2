@@ -1,7 +1,7 @@
+//check string is palindrome
 
 import java.util.Scanner;
-
-public class checkpalindrome {
+public class assesque3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
@@ -13,5 +13,6 @@ public class checkpalindrome {
             }
         }
         System.out.println(str+" is a palindrome");
+        sc.close();
     }
 }

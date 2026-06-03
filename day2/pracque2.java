@@ -1,7 +1,7 @@
+//spiral traversal of matrix
 
 import java.util.Scanner;
-
-public class spiralmatrix {
+public class pracque2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int r = sc.nextInt();
@@ -36,5 +36,6 @@ public class spiralmatrix {
             left++;
             }
         }
+        sc.close();
     }
 }

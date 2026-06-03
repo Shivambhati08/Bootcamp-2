@@ -1,9 +1,10 @@
-
+//Rotate Matrix by 180deg
 import java.util.Scanner;
 
-public class reversecolumnandchangetonegativeevenrows {
+public class pracque5 {
+
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int arr[][] = new int[n][n];
         for (int i = 0; i < n; i++) {
@@ -12,16 +13,20 @@ public class reversecolumnandchangetonegativeevenrows {
             }
         }
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if(i % 2 == 0){
-                    arr[i][j] = -arr[i][j];
-                }
+            int left = 0;
+            int right = n - 1;
+            while (left < right) {
+                int temp = arr[i][left];
+                arr[i][left] = arr[i][right];
+                arr[i][right] = temp;
+                left++;
+                right--;
             }
         }
         for (int j = 0; j < n; j++) {
-            int top = 0;
-            int bottom = n-1;
-            while(top < bottom){
+                int top = 0;
+                int bottom = n - 1;
+            while (top < bottom) {
                 int temp = arr[top][j];
                 arr[top][j] = arr[bottom][j];
                 arr[bottom][j] = temp;
@@ -35,5 +40,6 @@ public class reversecolumnandchangetonegativeevenrows {
             }
             System.out.println();
         }
+        sc.close();
     }
 }

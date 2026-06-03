@@ -1,7 +1,7 @@
+//Sum of boundary elements of a matrix
 
 import java.util.Scanner;
-
-public class deletethesmallestelementofmatrix {
+public class pracque5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int r = sc.nextInt();
@@ -12,24 +12,15 @@ public class deletethesmallestelementofmatrix {
                 arr[i][j] = sc.nextInt();
             }
         }
-        int min = Integer.MAX_VALUE;
-        int row = -1;
-        int col = -1;
+        int sum = 0;
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
-                if(arr[i][j] < min){
-                    min = arr[i][j];
-                    row = i;
-                    col = j;
+                if(i == 0 || j == 0 || i == r-1 || j == c-1){
+                    sum += arr[i][j];
                 }
             }
         }
-        arr[row][col] = 0;
-         for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c; j++) {
-                System.out.print(arr[i][j]+" ");
-            }
-            System.out.println();
-        }
+        System.out.println("Sum of Boundry elements of matrix: "+sum);
+        sc.close();
     }
 }

@@ -1,5 +1,7 @@
+//Count Vowels in a String
+
 import java.util.Scanner;
-public class vowelcount {
+public class assesque1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
@@ -11,5 +13,6 @@ public class vowelcount {
             }
         }
         System.out.println(count);
+        sc.close();
     }
 }

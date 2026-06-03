@@ -1,7 +1,7 @@
+// Check if two strings are anagram or not 
 
 import java.util.Scanner;
-
-public class anagram {
+public class pracque3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str1 = sc.nextLine();
@@ -11,7 +11,6 @@ public class anagram {
             return;
         }
         int freq[] = new int[26];
-
         for (int i = 0; i < str1.length(); i++) {
             char ch = str1.charAt(i);
             freq[ch - 'a']++;

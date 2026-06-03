@@ -1,5 +1,7 @@
+// Group Anagrams
+
 import java.util.*;
-public class groupanagram {
+public class pracque4 {
     public static void main(String[] args) {
     String arr[] = {"eat", "tea", "tan", "ate", "nat", "bat"};
         HashMap<String, ArrayList<String>> map = new HashMap<>();

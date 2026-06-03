@@ -1,7 +1,7 @@
+// Sort 0s, 1s and 2s (DNF Algorithm)
 
 import java.util.Scanner;
-
-public class sort0s1sand2sdutchalgorithm {
+public class pracque7 {
     public static void swap(int arr[], int n, int m){
         int temp = arr[n];
         arr[n] = arr[m];
@@ -33,5 +33,6 @@ public class sort0s1sand2sdutchalgorithm {
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i]+" ");
         }
+        sc.close();
     }
 }

@@ -1,7 +1,7 @@
-
+// Delete smallest element from a matrix
 import java.util.Scanner;
 
-public class reverseeachrowofmatrix {
+public class pracque7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int r = sc.nextInt();
@@ -12,18 +12,25 @@ public class reverseeachrowofmatrix {
                 arr[i][j] = sc.nextInt();
             }
         }
+        int min = Integer.MAX_VALUE;
+        int row = -1;
+        int col = -1;
         for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c/2; j++) {
-                int temp = arr[i][j];
-                arr[i][j] = arr[i][c-j-1];
-                arr[i][c-j-1] = temp;
+            for (int j = 0; j < c; j++) {
+                if(arr[i][j] < min){
+                    min = arr[i][j];
+                    row = i;
+                    col = j;
+                }
             }
         }
-        for (int i = 0; i < r; i++) {
+        arr[row][col] = 0;
+         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
                 System.out.print(arr[i][j]+" ");
             }
             System.out.println();
         }
+        sc.close();
     }
 }
