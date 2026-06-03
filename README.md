@@ -2,4 +2,4 @@
 
 Date: 25 May to 31 July 2026.
 
-This repository includes all the DSA questions which solved in this Bootcamp
+This repository contains all the DSA problems solved during the Bootcamp-2 journey. It includes solutions covering various topics such as arrays, strings, matrices, sorting, searching, recursion, and other core programming concepts implemented in Java.
