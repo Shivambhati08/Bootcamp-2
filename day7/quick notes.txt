@@ -1,0 +1,23 @@
+Stack & Queue Problems:
+
+1. stack implementation using array and LinkedList
+2. Queue implementation using array and LinkedList
+3. Balanced parenthesis using stack
+4. infix, prefix and profix implementation and conversion
+5. Next greater element
+6. Stock span problem
+7. implementation of min stack
+8. Queue using stack
+9. Stack using Queue
+10. Slinding window maximum
+11. First negative in a window
+12. Celebrity problem
+13. Largest rectangle in a histogram
+14. Traiping rain water
+15. Generate binary number from 1 to n using Queue
+16. Sort the stack using another stack
+17. Delete middle element of a stack
+18. Implement two stacks in a single array
+19. Reverse first k elements of queue using  
+20. Reverse a string using stack
+21. N-Stack implementation 

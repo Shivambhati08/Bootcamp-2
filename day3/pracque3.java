@@ -26,5 +26,6 @@ public class pracque3 {
             }
         }
         System.out.println("Anagram");
+        sc.close();
     }
 }
